@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
  * @author Nursultan Musakunov
  */
 public abstract class BasePage {
-    WebElementActions elementActions = new WebElementActions();
-    MockDataGenerator mock = new MockDataGenerator();
+    public WebElementActions elementActions = new WebElementActions();
+    public MockDataGenerator mock = new MockDataGenerator();
 
     public BasePage(){
         PageFactory.initElements(Driver.getDriver(),this);
